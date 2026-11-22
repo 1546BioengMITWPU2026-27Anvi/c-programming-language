@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+   int a, b, temp;
+   int *p, *q;
+   
+   printf("Enter two number: ");
+   scanf("%d %d" , &a, &b);
+   
+   p = &a;
+   q = &b;
+   
+   temp = *p;
+   *p = *q;
+   *q = temp;
+   
+   printf("After sapping:\n");
+   printf("First number = %d\n" , a);
+   printf("Second number = %d\n" , b);
+   
+   return 0;
+   
+ }
